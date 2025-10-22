@@ -1,11 +1,11 @@
-import { Home, BarChart3, Users, Settings } from "lucide-react";
+import { Home, BarChart3, Users, Settings, PieChart } from "lucide-react";
 
 export default function Sidebar() {
   return (
     <aside className="hidden md:flex flex-col w-64 h-screen bg-white/30 dark:bg-white/5 backdrop-blur-lg border-r border-white/20 shadow-xl transition-all duration-300">
-        <div className="p-6 text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-            PulseBoard
-         </div>
+      <div className="p-6 text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
+        PulseBoard
+      </div>
 
       <nav className="flex-1 px-4 space-y-2 text-gray-600 dark:text-gray-300">
         <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -19,6 +19,14 @@ export default function Sidebar() {
         </a>
         <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
           <Settings size={18} /> <span>Configurações</span>
+        </a>
+
+        {/* Novos links estéticos, sem usar PieChart real */}
+        <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-white/30 transition">
+          <BarChart3 size={18} /> <span>Relatórios</span>
+        </a>
+        <a href="#" className="flex items-center gap-3 p-2 rounded-lg hover:bg-white/30 transition">
+          <PieChart size={18} /> <span>Estatísticas</span>
         </a>
       </nav>
     </aside>
