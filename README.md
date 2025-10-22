@@ -81,12 +81,22 @@ O projeto estará disponível em `http://localhost:5173`
 
 ```
 src/
-├── components/       # Componentes reutilizáveis
-├── pages/           # Páginas (Dashboard)
-├── context/         # Contextos (ex: ThemeContext)
-├── assets/          # Imagens e recursos estáticos
-├── App.jsx          # Componente principal
-└── main.jsx         # Ponto de entrada
+├── components/              # Componentes reutilizáveis
+│   ├── BarChartSection.jsx  # Gráfico de barras
+│   ├── CardMetric.jsx       # Card de métrica individual
+│   ├── ChartSection.jsx     # Container para gráficos
+│   ├── FilterBar.jsx        # Barra de filtros
+│   ├── Header.jsx           # Cabeçalho do dashboard
+│   ├── LineChartSection.jsx # Gráfico de linhas
+│   ├── PieChartSection.jsx  # Gráfico de pizza
+│   └── Sidebar.jsx          # Barra lateral de navegação
+├── pages/
+│   └── Dashboard.jsx        # Página principal do dashboard
+├── context/
+│   └── ThemeContext.jsx     # Contexto para gerenciamento do tema
+├── assets/                  # Imagens e recursos estáticos
+├── App.jsx                  # Componente principal
+└── main.jsx                 # Ponto de entrada
 ```
 
 ---
@@ -94,10 +104,10 @@ src/
 ## Preview
 
 ### Dashboard Light Mode
-![Dashboard Light Mode](./images/light.png)
+![Dashboard Light Mode](./public/images/light.png)
 
 ### Dashboard Dark Mode
-![Dashboard Dark Mode](./images/dark.png)
+![Dashboard Dark Mode](./public/images/dark.png)
 
 ---
 
