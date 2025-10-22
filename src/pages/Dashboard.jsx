@@ -1,9 +1,10 @@
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import CardMetric from "../components/CardMetric";
-import ChartSection from "../components/ChartSection";
-import FilterBar from "../components/FilterBar";
+import LineChartSection from "../components/LineChartSection";
 import PieChartSection from "../components/PieChartSection";
+import BarChartSection from "../components/BarChartSection";
+import FilterBar from "../components/FilterBar";
 import { useState } from "react";
 
 export default function Dashboard() {
@@ -22,11 +23,10 @@ export default function Dashboard() {
         <main className="p-6 space-y-6">
           <FilterBar onFilter={handleFilter} />
 
-          {/* Texto sobre o filtro ativo */}
+          {/* Texto de filtro ativo */}
           {filters && (
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Exibindo dados de{" "}
-              <strong>{filters.categoria}</strong> dos{" "}
+              Exibindo dados de <strong>{filters.categoria}</strong> dos{" "}
               <strong>
                 {filters.periodo === "7d"
                   ? "últimos 7 dias"
@@ -37,6 +37,7 @@ export default function Dashboard() {
             </p>
           )}
 
+          {/* Cards de métricas */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <CardMetric title="Faturamento" value="R$ 24.500" change="+12%" />
             <CardMetric title="Usuários" value="1.203" change="+8%" />
@@ -44,8 +45,12 @@ export default function Dashboard() {
             <CardMetric title="Tickets" value="78" change="-3%" />
           </div>
 
-          <ChartSection />
-          <PieChartSection />
+          {/* Gráficos lado a lado */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <LineChartSection />
+            <PieChartSection />
+            <BarChartSection />
+          </div>
         </main>
       </div>
     </div>

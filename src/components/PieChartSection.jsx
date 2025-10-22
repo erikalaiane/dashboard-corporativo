@@ -11,17 +11,17 @@ const COLORS = ["#3b82f6", "#8b5cf6", "#10b981", "#f59e0b"];
 
 export default function PieChartSection() {
   return (
-    <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/10 backdrop-blur-md border border-white/30 shadow-lg transition-all">
+    <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/10 backdrop-blur-md border border-white/30 shadow-lg transition-all hover:scale-[1.02] duration-300">
       <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-4">
         Distribuição por Setor
       </h2>
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={250}>
         <PieChart>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
-            outerRadius={100}
+            outerRadius={80}
             dataKey="value"
             label
           >
