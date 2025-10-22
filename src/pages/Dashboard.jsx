@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import CardMetric from "../components/CardMetric";
 import ChartSection from "../components/ChartSection";
 import FilterBar from "../components/FilterBar";
+import PieChartSection from "../components/PieChartSection";
 import { useState } from "react";
 
 export default function Dashboard() {
@@ -44,6 +45,7 @@ export default function Dashboard() {
           </div>
 
           <ChartSection />
+          <PieChartSection />
         </main>
       </div>
     </div>
