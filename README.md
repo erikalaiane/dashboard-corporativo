@@ -7,6 +7,10 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts-FF6B6B?style=for-the-badge&logo=chart.js&logoColor=white)
 
+[![Deploy](https://img.shields.io/badge/Deploy-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://erikalaiane.github.io/dashboard-corporativo/)
+
+[**🚀 Ver Projeto Ao Vivo**](https://erikalaiane.github.io/dashboard-corporativo/)
+
 </div>
 
 ## Sobre o Projeto
@@ -26,13 +30,13 @@ Dashboard corporativo moderno e responsivo desenvolvido em React, utilizando Tai
 
 ## Funcionalidades
 
--  Dashboard com cards de métricas em tempo real
--  Gráficos interativos (linha, barra e pizza)
--  Filtros de período e categoria
--  Dark mode com toggle suave
--  Sidebar fixa e totalmente responsiva
--  Design moderno com glassmorphism e animações fluidas
--  Performance otimizada com Vite
+- Dashboard com cards de métricas em tempo real
+- Gráficos interativos (linha, barra e pizza)
+- Filtros de período e categoria
+- Dark mode com toggle suave
+- Sidebar fixa e totalmente responsiva
+- Design moderno com glassmorphism e animações fluidas
+- Performance otimizada com Vite
 
 ---
 
@@ -69,7 +73,7 @@ npm install
 npm run dev
 ```
 
-O projeto estará disponível em `http://localhost:5173` 🚀
+O projeto estará disponível em `http://localhost:5173`
 
 ---
 
@@ -104,6 +108,7 @@ npm run dev      # Inicia o servidor de desenvolvimento
 npm run build    # Cria build de produção
 npm run preview  # Preview da build de produção
 npm run lint     # Executa o linter
+npm run deploy   # Faz deploy para GitHub Pages
 ```
 
 ---
@@ -120,18 +125,17 @@ Contribuições são sempre bem-vindas! Para contribuir:
 
 ---
 
-## 👩‍💻 Autora
+## Autora
 
 **Erika Laiane**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/erikalaiane)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/erika-laiane-azevedo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erika-laiane-azevedo)
 
 ---
 
 <div align="center">
 
 Desenvolvido com ❤️ por Erika Laiane
-
 
 </div>
