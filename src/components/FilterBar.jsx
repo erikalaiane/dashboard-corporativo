@@ -9,7 +9,7 @@ export default function FilterBar({ onFilter }) {
   };
 
   return (
-    <div className="p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-sm flex flex-wrap gap-4 items-center transition-colors">
+    <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/10 backdrop-blur-md border border-white/30 shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
       <div className="flex flex-col">
         <label className="text-sm text-gray-600 dark:text-gray-300 mb-1">
           Período
