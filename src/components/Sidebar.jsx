@@ -2,7 +2,8 @@ import { Home, BarChart3, Users, Settings, PieChart, FileText } from "lucide-rea
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:flex flex-col w-64 h-screen bg-white/30 dark:bg-white/5 backdrop-blur-lg border-r border-white/20 shadow-xl transition-all duration-300">
+    <aside className="hidden md:flex flex-col w-64 h-screen sticky top-0 bg-white/30 dark:bg-white/5 backdrop-blur-lg border-r border-white/20 shadow-xl transition-all duration-300">
+
       
       {/* Logo */}
       <div className="p-6 text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
